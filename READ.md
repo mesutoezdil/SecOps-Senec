@@ -39,7 +39,7 @@ Dieses Terraform-Modul erstellt 4 Server (3 Webserver und 1 Load Balancer) in de
 
 - Die internen IP-Adressen der Server und die externe IP des Lastenausgleichs werden als Ausgaben angezeigt.
 
-## Geheime Informationen
+## Zur Sicherheit
 
 Füge bitte eine Datei `secrets.tfvars` mit sensiblen Daten hinzu:
 
