@@ -20,9 +20,9 @@ Dieses Terraform-Modul erstellt 4 Server (3 Webserver und 1 Load Balancer) in de
 - **Interne IP-Adressen**: Die im Skript angegebenen internen IP-Adressen können nicht direkt zugewiesen werden. Hetzner weist diese Adressen automatisch zu, was ein potentielles Sicherheitsrisiko darstellen kann, wenn bestimmte IP-Adressen für sichere Kommunikation zwischen den Servern gebunden werden sollen.
 - **API-Schlüssel**: Der API-Schlüssel in der `main.tf`-Datei sollte nicht in einem öffentlichen Repository gespeichert werden. Falls jemand mit böswilliger Absicht Zugriff auf diesen Schlüssel erhält, könnte er auf das Hetzner-Konto zugreifen.
 Füge bitte eine Datei `secrets.tfvars` mit sensiblen Daten hinzu:
-- **Setze bitte deinen SSH-Schlüssel für den Serverzugriff.
+- Setze bitte deinen SSH-Schlüssel für den Serverzugriff.
 ssh_key = "ssh-rsa AAAAB3NzaC1yc2E..."
-- **Gib bitte deinen Hetzner Cloud API-Schlüssel für die Authentifizierung ein.
+- Gib bitte deinen Hetzner Cloud API-Schlüssel für die Authentifizierung ein.
 api_token = "9dX...Lm"
 
 ## Nützliche Funktionen
